@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Prozessgalerie</title>
-
+    <link rel="icon" type="image/x-icon" href="/images/profil.ico">
     <link rel="stylesheet" type="text/css" href="app.css">
 
 
@@ -13,12 +13,13 @@
   </head>
 
   <body>
-    <header><h1>Mein Name</h1></header>
+    <header><h1>Hannes Salzmann</h1></header><br>
     <nav>
         <ul>
-          <li><a href="Sprint1/index.html">Sprint 1</a></li>
-          <li><a href="">Sprint 2</a></li>
-          <li><a href="">Sprint 3</a></li>
+          <li><a href="#Sprint1">Sprint 1</a></li>
+          <li><a href="#Sprint2">Sprint 2</a></li>
+          <li><a href="#Sprint3">Sprint 3</a></li>
+          <li><a href="#Sprint4">Sprint 4</a></li>
         </ul>
     </nav>
 
@@ -39,19 +40,37 @@
         </article>
         <article>
             <img src="images/img5.png" />
-        </article>
-       
-        
+        </article> 
     </section>
 
-    <footer>
-        <a href="#screenshots">
+    <div class="footer">
+        <a href="#screenshots" >
             <svg class="arrows">
-            <path class="a1" d="M0 0 L30 32 L60 0"></path>
-            <path class="a2" d="M0 20 L30 52 L60 20"></path>
-           
-        </svg>
-    </a>
+                <path class="a1" d="M0 0 L30 32 L60 0 M0 20 L30 52 L60 20"></path>
+            </svg>
+        </a>
+    </div>
+    
+
+    <div id="Sprint1" class="fullPage ">
+        <h2>Sprint 1</h2>
+        <p>Das ist der erste Sprint</p>
+        <code>sjdlkasjdkljaskldjklasjdklasjdkl</code>
+        <img src="images/img1.png" width="600" height="600"/>
+    </div>
+    <div id="Sprint2" class="fullPage">
+        
+    </div>
+    <div id="Sprint3" class="fullPage">
+
+    </div>
+
+    <div id="Sprint4" class="fullPage">
+
+    </div>
+
+    <footer>
+        
     </footer>
     <script src="sketch.js"></script>
   </body>

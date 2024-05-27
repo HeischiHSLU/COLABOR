@@ -22,10 +22,12 @@ header{
     top:0px;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 header h1{
-    font-weight: normal;
+    background-color: #FFFFFF;
+    color: #000;
+    font-weight: bold;
     display: inline-block;
     border:1px solid white;
     padding:0.5rem;
@@ -90,7 +92,7 @@ section#screenshots article img{
     object-fit: cover;
 }
 
-footer{
+.footer{
     position: fixed;
     bottom:20px;
     width:100vw;
@@ -101,7 +103,7 @@ footer{
     z-index:10;
 }
 
-footer a {
+.footer a {
     display:block;
 	width: 60px;
 	height: 52px;
@@ -117,4 +119,12 @@ footer a {
 
 .arrows path:hover{
     stroke-width: 4px;	
+}
+
+.fullpage {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0px 20px 0px 20px;
+    
 }
