@@ -73,14 +73,17 @@ function draw() {
   //////////////////////////////////////////////
   // Global Rotation
   ////////////////////////////////////////////
+  if (sound.isPlaying()){
   rotateX(frameCount * 0.01);
   if (frameCount % 1000 < 500){
-    gobalRotationY += 0.005;
+    gobalRotationY += 0.002;
   }else{
-    gobalRotationY -= 0.005;
+    gobalRotationY -= 0.002;
   }
   rotateY(gobalRotationY);
-  rotateX(PI/3.2); // GobalRotation
+}
+rotateX(PI/3.2); // GobalRotation
+
   ///////////////////////////////////////////////
 
 
@@ -96,7 +99,9 @@ function draw() {
   translate( (innerRadius) * cos(theta), (innerRadius ) * sin(theta),0); 
   rotateZ(theta);
   rotateY(frameCount * 0.02);
+
   rotateX(PI/2)
+
   ////////////////////////////////////////////////////////////////////
   drawCircle(smallinnerRadius, smallouterRadius, detail/2, depth);
   pop();
