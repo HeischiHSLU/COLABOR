@@ -128,3 +128,25 @@ section#screenshots article img{
     margin: 0px 20px 0px 20px;
     
 }
+header{
+    background-color: #000;
+}
+
+.main {
+    margin: 0px 50px 0px 50px;
+    
+}
+.bildcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.bilder{
+    margin: 0px 20px 0px 20px;
+}
+.sprint{
+    margin-bottom: 80px;
+}

@@ -43,7 +43,7 @@ function setup() {
   markov.addText(data5.join(" "));
 
   generateText();
-  epicSound.play(); 
+  //epicSound.play(); 
 
 }
 let beschleunigung = 0;
@@ -51,9 +51,13 @@ function draw() {
   
   background(0);
 
+  if(frameCount == 10){
+   epicSound.play();  
+  }
   
   if (frameCount < 360) {
-  
+    
+
     if (frameCount > 200){
       beschleunigung +=70
     }
