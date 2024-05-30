@@ -4,12 +4,18 @@ let playButton;
 let fft;  
 let peakDetect;
 let peakSlider;
+let resetButton;
 
 function setup() {
   let canvas = createCanvas(600, 600, WEBGL);
   
   fft = new p5.FFT();
   peakDetect = new p5.PeakDetect(20,20000,0.1);
+
+  resetButton = createButton('Reset');
+  resetButton.position(520, 19);
+  resetButton.mousePressed(neuladu);
+  resetButton.class("btn btn-secondary");
 
 
   playButton = createButton('Play/Pause');
@@ -27,9 +33,12 @@ function setup() {
   canvas.drop(gotFile);
   fill(255, 204, 0);
   background(200);
-  initdraw();
+  //initdraw();
 }
 
+function neuladu(){
+  location.reload();
+}
 
 let gobalRotationY = 0;
 let innerRadius = 200;
@@ -44,7 +53,7 @@ function draw() {
   frameRate(60);
 
   if (soundLoaded== false){ 
-    //initdraw();
+    initdraw();
     return;
   }
   if(sound.isPlaying()){
@@ -208,6 +217,7 @@ function drawCircle(innerRadius, outerRadius, detail, depth){
 }
 
 function initdraw() {
+  background(200);
   textScreen = createGraphics(600,600)
   textScreen.textSize(24);
   textScreen.text("Drag an audio file onto the canvas.",width/2 -180,height/2);
