@@ -137,6 +137,25 @@ function draw() {
 
       }
     }
+    for(let i = 0; i < particles.length; i++){
+      if(particles[i].reversed == true && dist(particles[i].pos.x,particles[i].pos.y,particles[i].pos.z,0,0,0) < 200){
+        if(particles[i].bounces > 3){
+          particles[i].vel = createVector(0,0,0);
+        }else{
+          particles[i].vel.mult(-0.5);
+          particles[i].stagination = true;
+        }
+        
+        if(i == 1){console.log("Bounce!")}
+        
+        particles[i].bounces++;
+      }
+      if(particles[i].stagination == true && dist(particles[i].pos.x,particles[i].pos.y,particles[i].pos.z,0,0,0) > 250){
+        particles[i].vel.mult(-1);
+        particles[i].bounces++;
+        if(i == 1){console.log("Bounce!")}
+      }
+    }
     
   }
 
@@ -244,13 +263,12 @@ class Particles{
     if(this.destination != createVector(0,0,0)){
       if(dist(this.pos.x,this.pos.y,this.pos.z,this.destination.x,this.destination.y,this.destination.z) < 10){
         this.pos = this.destination;
-        this.destination = this.tempPos;
-        console.log("destination reached");
+        this.destination = this.tempPos.copy();
+
         this.pos.x = lerp(this.pos.x, this.destination.x, 0.2);
         this.pos.y = lerp(this.pos.y, this.destination.y, 0.2);
         this.pos.z = lerp(this.pos.z, this.destination.z, 0.2);
       }else{
-        console.log("lerp");  
         this.pos.x = lerp(this.pos.x, this.destination.x, 0.2);
         this.pos.y = lerp(this.pos.y, this.destination.y, 0.2);
         this.pos.z = lerp(this.pos.z, this.destination.z, 0.2);
