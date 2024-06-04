@@ -24,15 +24,16 @@
     </nav>
     <div class="main" >
         <h1>Prozessgalerie</h1>
-        <p>Hello There! Das hier ist meine Prozessgalerie vom Colabor Modul 2024 and der HSLU.</p>
-        <p>Hier zeige ich meine 4 Sketches, welche innerhalb dieses Modul über 6 Wochen erarbeitet wurden. Ziel von mir war es die Ecken zu erkunden, für  welche ich in Beautiful Mathematics nicht Zeit hatte. </p>
+        <p>Hello There! Das hier ist meine Prozessgalerie vom Colabor-Modul 2024 an der HSLU.</p>
+        <p>Hier zeige ich meine 4 Sketches, welche innerhalb dieses Moduls über 6 Wochen erarbeitet wurden. Ziel von mir war es die Ecken zu erkunden, für welche ich in Beautiful Mathematics keine Zeit hatte.</p>
         <br><br>
         <div id="Sprint1" class="sprint">          
             <h2>Sprint 1</h2>
             <h3>Generativ</h3>
-            <p>Im Sprint 1 ging es darum etwas Generatives zu erstellen. Meine Idee war es die Funktion createCapture() von p5.js zu nutzen diese Verwendet die Kamera des Laptops und stellt diese dann für weitere Manipulationen zur Verfügung.</p>  
-            <p>Im ersten linken Bild, welches ich erstellt habe, wurde ein Grid über den gesamten Canvas gespannt. Danach wurden Pixel, welchen einen hohen Kontrast zu ihren Nachbarn aufweisen mit einer Schwarzen Linie gekennzeichnet. Wenn ihr das Ganze austesten möchtet, könnt ihr einfach auf die Beiden Bilder clicken. </p>
-            <p>Beim zweiten rechten Bild habe ich den Weiter entwickelt, sodass jetzt, wenn es davor einen Strich oben und rechts eines Pixels gezeichnet hätte, nun eine Abkantung zeichnet hier im 45° Winkel. Durch diese Änderung scheint das Bild mehr Tiefe zu erhalten.</p>
+            <p>Im Sprint 1 ging es darum etwas Generatives zu erstellen. Meine Idee war es die Funktion createCapture() von p5.js zu nutzen. Diese verwendet die Kamera des Laptops und stellt diese dann für weitere Manipulationen zur Verfügung.</p>
+            <p>Im ersten linken Bild, welches ich erstellt habe, wurde ein Grid über die gesamten Canvas gespannt. Danach wurden Pixel, welche einen hohen Kontrast zu ihren Nachbarn aufweisen mit einer schwarzen Linie gekennzeichnet. Wenn ihr das austesten möchtet, könnt ihr einfach auf die beiden Bilder klicken.</p>
+
+            <p>Beim zweiten rechten Bild habe ich weiter entwickelt, sodass jetzt eine Abkantung im 45°-Winkel gezeichnet wird. Durch diese Änderung scheint das Bild mehr Tiefe zu erhalten.</p>
             <div class="bildcontainer">
                 <a href="/Sprint1/Abgabe_Sprint1/index.html">
                     <img class="bilder"src="images/bild1_2.PNG" width="600" height="600"/>
@@ -42,7 +43,7 @@
                 </a>
                 
             </div>
-            <p>Die grösste Herausforderung hier war es den Kontrast der Pixel im Videos zu verarbeiten</p>
+            <p>Die grösste Herausforderung hier war es den Kontrast der Pixel im Video zu verarbeiten.</p>
             <code>
                 loadPixels();<br>
                 <br>
@@ -62,23 +63,24 @@
         <div id="Sprint2" class="sprint">
             <h2>Sprint 2</h2>
             <h3>Sprache</h3>
-            <p>Im zweit Sprint ging es darum Sprache zu integrieren. </p>
-            <p>Meine Idee war es für den zweiten Sprint2 eine Markov Chain zu benutzten. Vereinfacht gesagt benutzt die Markov Chain einen bestehenden Text. Ein Wort wird als Startwort definiert, danach schaut die Markov Chain, welche worte im Text nach diesem folgten, falls es mehrere Optionen gibt, wird eine zufällige gewählt, so entstehen neue Sätze.</p>
-            <p>Als Textdatenbank fand ich es lustig, wenn man einige Spam Emails, die man Täglich in sein E-Mail-Postfach gespült bekommt, zu nutzen. Von diesen habe ich 5 ausgewählt. Als optische und auditive Begleitung habe ich versucht das Starwars Intro nachzubauen.</p>
+            <p>Im zweiten Sprint ging es darum Sprache zu integrieren.</p>
+            <p>Meine Idee war es für den zweiten Sprint eine Markov Chain zu benutzten. Vereinfacht gesagt benutzt die Markov Chain einen bestehenden Text. Ein Wort wird als Startwort definiert, danach schaut die Markov Chain, welche Worte im Text nach diesem folgten. Falls es mehrere Optionen gibt, wird eine zufällige gewählt, so entstehen neue Sätze.</p>
+
+            <p>Als Textdatenbank fand ich es lustig, einige Spam E-Mails, die man täglich ins E-Mail-Postfach gespült bekommt, zu nutzen. Von diesen habe ich 5 ausgewählt. Als optische und auditive Begleitung habe ich versucht das Star Wars Intro nachzubauen. Da ich in einem vorherigen Modul die Markov Chain schon einmal behandelt habe, war die Herausforderung hier die Rekonstruierung des Star Wars Intros.</p>
             <a href="/Sprint2/Abgabe_Sprint2/index.html">
                 <img class="bilder"src="images/bild2.PNG" width="600" height="600"/>
             </a>
-            <p>Da ich in einem vorherigen Modul die Markov Chain schon einmal behandelt habe war die Herausforderung hier die Rekonstruierung des Starwars Intros. </p>
-            <p>Für diesen Sketch habe ich WEBGL als Canvas genutzt. WEBGL ermöglicht es im 3 Dimensionalen Raum zu arbeiten so muss ich den Text nicht manuell verziehen sondern kann diesen durch den Raum ziehen und ihn immer weiter weggleiten lassen. </p>
+            <p>Für diesen Sketch habe ich WEBGL als Canvas genutzt. WEBGL ermöglicht es im  dreidimensionalen Raum zu arbeiten. So muss ich den Text nicht manuell verziehen sondern kann diesen durch den Raum ziehen und ihn immer weiter weggleiten lassen.</p>
+
         </div>
         <div id="Sprint3" class="sprint">
             <h2>Sprint 3</h2>
             <h3>Sound</h3>
-            <p>Als meinen dritten Sketch wollte ich ein kleines, ja man könnte es Tool nennen erstellen. Der Nutzer ist in der Lage eine beliebiges Audio File hochzuladen. Und einen kleine Visuelle und Auditive Stimulation erfahren. Die Richtung des Audios folgt dem gelben Kreis. Zudem reagiert der gelbe Kreis auf Ausschläge des Audios. Mit dem Regler kann diese Sensibilität eingestellt werden. Falls man ein neues Audio ausprobieren möchte, kann man auf Reset drücken oder die Seite neu laden.</p>
+            <p>Als meinen dritten Sketch wollte ich ein kleines Tool erstellen. Die User sind in der Lage eine beliebiges Audio File hochzuladen und eine kleine visuelle und auditive Stimulation zu erfahren. Die Richtung des Audios folgt dem gelben Kreis. Zudem reagiert der gelbe Kreis auf Ausschläge des Audios. Mit dem Regler kann diese Sensibilität eingestellt werden. Falls man ein neues Audio ausprobieren möchte, kann man auf Reset drücken oder die Seite neu laden. </p>
             <a href="/Sprint3/Abgabe_Sprint3/index.html">
                 <img class="bilder"src="images/bild3.PNG" width="600" height="600"/>
             </a>
-            <p>Die Ringe habe ich selbst generiert mit Hilfe von BeginShape() und EndShape()</p>
+            <p>Die Ringe habe ich selbst generiert mit Hilfe von BeginShape() und EndShape().</p>
             <code>
                 beginShape(TRIANGLE_STRIP);<br>
                 for (let i = 0; i <= detail; i++) {<br>
@@ -100,7 +102,7 @@
                 }<br>
                 endShape(CLOSE);<br>
             </code>
-            <p>Für die Richtung des Audios habe ich panning Verwendet und dieses auf die Position des Kreises gemapped.</p>
+            <p>Für die Richtung des Audios habe ich panning verwendet und dieses auf die Position des Kreises gemapped.</p>
             <code>
                 let panning = map(mouseX, 0, width, -1, 1);<br>
                 sound.pan(panning);<br>
@@ -109,10 +111,13 @@
         <div id="Sprint4" class="sprint">
             <h2>Sprint 4</h2>
             <h3>Vertiefung</h3>
-            <p>Im Sprint 4 geht es darum einen der letzten Sprint Sketches weiterzuentwickeln. Dafür haben wir uns dazu entschieden, ein gemeinsames Projekt in der Gruppe zu kreieren. Wir knüpfen dafür an dem Projekt von Marina, «Supernova» an.  Das Projekt soll Visuell an das Sterben eines Stern erinnern und dazu im Einklang eines gleichnamigen Songs sein.</p>
+            <p>Im Sprint 4 geht es darum einen der letzten Sprint Sketches weiterzuentwickeln. Dafür haben wir uns dazu entschieden, ein gemeinsames Projekt in der Gruppe zu kreieren. Wir knüpfen dafür an dem Projekt von Marina, «Supernova» an. Das Projekt soll visuell an das Sterben eines Stern erinnern und dazu im Einklang eines gleichnamigen Songs sein.</p>
+            
             <a href="/Sprint4/Abgabe_Sprint4/index.html">
                 <img class="bilder"src="images/bild4.jpg" width="600" height="600"/>
             </a>
+            <p>Für die Erarbeitung unseres Projekts haben wir die Arbeit folgender Massen aufgeteilt. Marina hat sich mit Shader und der p5-Sound Library beschäftigt, Christina hat sich mit den Texturen der Planeten und des Panoramas beschäftigt und ich habe mich Allgemein mit dem Ablauf und der 3D Welt beschäftigt.</p>
+            
         </div>    
     </div>
     <footer>

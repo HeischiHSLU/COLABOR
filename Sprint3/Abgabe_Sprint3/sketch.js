@@ -6,6 +6,10 @@ let peakDetect;
 let peakSlider;
 let resetButton;
 
+
+// Kleine Info für die die sich die Mühe machen den Code zu lesen:
+// Dieser Code ist nicht gepolished und ist eine Kurzzeitige zusammenarbeit von 2 Personen.
+
 function setup() {
   let canvas = createCanvas(600, 600, WEBGL);
   

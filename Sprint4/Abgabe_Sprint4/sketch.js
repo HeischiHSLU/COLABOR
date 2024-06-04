@@ -1,3 +1,8 @@
+// Code by: Marina, Hannes
+// Kleine Info für die die sich die Mühe machen den Code zu lesen:
+// Dieser Code ist nicht gepolished und ist eine Kurzzeitige zusammenarbeit von 2 Personen.
+
+
 let particles = [];
 let planets = [];
 let explosionAmmount = 250;
